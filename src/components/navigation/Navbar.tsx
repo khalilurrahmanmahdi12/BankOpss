@@ -196,9 +196,9 @@ function Navbar({
         </p>
       </div>
 
-      {/* Kanan */}
+      {/* Bagian Kanan */}
       <div className="ml-auto flex min-w-0 items-center gap-2 sm:gap-3">
-        {/* Pencarian Desktop */}
+        {/* Search */}
         <div className="relative hidden xl:block">
           <Search
             size={18}
@@ -307,6 +307,7 @@ function Navbar({
             {/* Dropdown Profil */}
             {profileOpen && (
               <div className="absolute right-0 top-full z-50 mt-2 w-72 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-lg">
+                {/* Informasi User */}
                 <div className="border-b border-slate-100 p-4">
                   <div className="flex items-center gap-3">
                     <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-slate-900 text-sm font-semibold text-white">
@@ -333,19 +334,20 @@ function Navbar({
                   </div>
                 </div>
 
+                {/* Menu */}
                 <div className="p-2">
                   <button
                     type="button"
-                    onClick={() =>
-                      setProfileOpen(
-                        false,
-                      )
-                    }
+                    onClick={() => {
+                      setProfileOpen(false)
+                      navigate('/profile')
+                    }}
                     className="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm font-medium text-slate-600 transition hover:bg-slate-50 hover:text-slate-900"
                   >
                     <UserRound
                       size={17}
                     />
+
                     Informasi Akun
                   </button>
 
@@ -357,6 +359,7 @@ function Navbar({
                     className="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left text-sm font-medium text-red-600 transition hover:bg-red-50"
                   >
                     <LogOut size={17} />
+
                     Keluar
                   </button>
                 </div>

@@ -21,6 +21,7 @@ import FraudAlerts from './pages/FraudAlerts'
 import Approvals from './pages/Approvals'
 import Reports from './pages/Reports'
 import AuditLogs from './pages/AuditLogs'
+import Profile from './pages/Profile'
 
 import AccessDenied from './pages/AccessDenied'
 import NotFound from './pages/NotFound'
@@ -47,6 +48,12 @@ function App() {
           <Route
             path="/"
             element={<Dashboard />}
+          />
+
+          {/* Profil */}
+          <Route
+            path="/profile"
+            element={<Profile />}
           />
 
           {/* Nasabah */}
