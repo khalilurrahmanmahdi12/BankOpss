@@ -21,9 +21,9 @@ https://github.com/khalilurrahmanmahdi12/BankOpss
 
 ---
 
-## ✨ Fitur Utama
+✨ Fitur Utama
 
-### 📊 Dashboard Monitoring
+📊 Dashboard Monitoring
 Menampilkan ringkasan kondisi operasional seperti:
 
 - 💰 Volume transaksi
@@ -37,7 +37,7 @@ Menampilkan ringkasan kondisi operasional seperti:
 
 ---
 
-### 👥 Manajemen Nasabah
+👥 Manajemen Nasabah
 Fitur untuk monitoring data nasabah, meliputi:
 
 - 🔎 Pencarian nasabah
@@ -49,7 +49,7 @@ Fitur untuk monitoring data nasabah, meliputi:
 
 ---
 
-### 🏦 Manajemen Rekening
+🏦 Manajemen Rekening
 Menampilkan informasi rekening seperti:
 
 - 🔢 Nomor rekening
@@ -68,7 +68,7 @@ Status rekening:
 
 ---
 
-### 💸 Monitoring Transaksi
+💸 Monitoring Transaksi
 Menampilkan seluruh aktivitas transaksi dengan informasi:
 
 - ID transaksi
@@ -98,7 +98,7 @@ Tersedia juga fitur pencarian dan filter transaksi.
 
 ---
 
-### 🛡️ Fraud Monitoring
+🛡️ Fraud Monitoring
 Modul khusus untuk memantau transaksi atau aktivitas yang terindikasi mencurigakan.
 
 Informasi yang tersedia:
@@ -118,7 +118,7 @@ Tindakan yang tersedia:
 
 ---
 
-### ✅ Approval / Persetujuan
+✅ Approval / Persetujuan
 Digunakan untuk menangani transaksi atau aktivitas yang membutuhkan persetujuan.
 
 Status approval:
@@ -131,7 +131,7 @@ Pengguna yang berwenang dapat memberikan keputusan beserta alasan persetujuan at
 
 ---
 
-### 📑 Laporan Operasional
+📑 Laporan Operasional
 Modul laporan menyediakan:
 
 - 📊 Ringkasan transaksi
@@ -145,7 +145,7 @@ Modul laporan menyediakan:
 
 ---
 
-### 📗 Export Excel
+📗 Export Excel
 Laporan dapat diekspor ke format `.xlsx` untuk kebutuhan:
 
 - 📊 Rekapitulasi
@@ -156,7 +156,7 @@ Laporan dapat diekspor ke format `.xlsx` untuk kebutuhan:
 
 ---
 
-### 📝 Audit Log
+📝 Audit Log
 Mencatat aktivitas pengguna di dalam sistem, seperti:
 
 - 🔄 Perubahan status
@@ -170,7 +170,7 @@ Audit log membantu proses monitoring, transparansi, dan pemeriksaan aktivitas in
 
 ---
 
-### 🔔 Sistem Notifikasi
+🔔 Sistem Notifikasi
 BankOps memiliki sistem notifikasi untuk aktivitas penting seperti:
 
 - 🚨 Fraud alert baru
@@ -188,7 +188,7 @@ Fitur notifikasi:
 
 ---
 
-### 👤 Informasi Akun
+👤 Informasi Akun
 Pengguna dapat melihat:
 
 - Nama
@@ -199,11 +199,11 @@ Pengguna dapat melihat:
 
 ---
 
-### 🔐 Role-Based Access Control
+🔐 Role-Based Access Control
 
 BankOps memiliki 3 role utama:
 
-#### 👑 Administrator
+👑 Administrator
 Akses penuh ke:
 
 - Dashboard
@@ -215,7 +215,7 @@ Akses penuh ke:
 - Laporan
 - Audit Log
 
-#### 🧑‍💼 Supervisor
+🧑‍💼 Supervisor
 Akses ke:
 
 - Dashboard
@@ -225,7 +225,7 @@ Akses ke:
 - Persetujuan
 - Laporan
 
-#### 🕵️ Fraud Analyst
+🕵️ Fraud Analyst
 Akses ke:
 
 - Dashboard
@@ -234,7 +234,7 @@ Akses ke:
 
 ---
 
-## 🔒 Keamanan Akses
+🔒 Keamanan Akses
 
 BankOps dilengkapi dengan:
 
@@ -248,7 +248,7 @@ BankOps dilengkapi dengan:
 
 ---
 
-## 📱 Responsive Design
+📱 Responsive Design
 
 BankOps dirancang agar nyaman digunakan pada:
 
@@ -267,7 +267,7 @@ Fitur responsive:
 
 ---
 
-## ⏳ Loading State
+⏳ Loading State
 
 Sistem dilengkapi dengan **Skeleton Loading** untuk memberikan feedback visual ketika halaman sedang dimuat.
 
@@ -275,7 +275,7 @@ Hal ini membuat pengalaman pengguna terasa lebih halus dan modern.
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+🛠️ Teknologi yang Digunakan
 
 - ⚛️ React
 - 🔷 TypeScript
@@ -290,22 +290,22 @@ Hal ini membuat pengalaman pengguna terasa lebih halus dan modern.
 
 ---
 
-## 🧪 Demo Account
+🧪 Demo Account
 
-### 👑 Administrator
+👑 Administrator
 ```text
 Email    : admin@bankops.id
 Password : admin123
 ````
 
-### 🧑‍💼 Supervisor
+🧑‍💼 Supervisor
 
 ```text
 Email    : supervisor@bankops.id
 Password : supervisor123
 ```
 
-### 🕵️ Fraud Analyst
+🕵️ Fraud Analyst
 
 ```text
 Email    : fraud@bankops.id
@@ -314,7 +314,7 @@ Password : fraud123
 
 ---
 
-## 📌 Catatan
+📌 Catatan
 
 BankOps saat ini merupakan **prototype / demo portfolio**.
 
@@ -324,7 +324,7 @@ Fitur seperti autentikasi, fraud detection, approval, rekening, dan transaksi ma
 
 ---
 
-## 🔮 Pengembangan Selanjutnya
+🔮 Pengembangan Selanjutnya
 
 BankOps masih dapat dikembangkan dengan:
 
