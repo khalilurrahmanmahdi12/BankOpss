@@ -1,22 +1,18 @@
-Bisa. Emoji boleh, malah bikin README lebih hidup, asal jangan tiap baris dikasih roket sampai repo kelihatan seperti grup Telegram crypto.
 
-Ini versi README yang lebih keren dan tetap profesional:
+🏦 BankOps
 
-````md
-# 🏦 BankOps
-
-**BankOps** adalah aplikasi web untuk monitoring operasional perbankan dalam satu dashboard, mulai dari transaksi, nasabah, rekening, fraud alert, approval, laporan, hingga audit aktivitas pengguna.
+BankOps adalah aplikasi web untuk monitoring operasional perbankan dalam satu dashboard, mulai dari transaksi, nasabah, rekening, fraud alert, approval, laporan, hingga audit aktivitas pengguna.
 
 Project ini dibuat sebagai prototype sistem internal perbankan dengan konsep **Role-Based Access Control**, sehingga setiap pengguna hanya dapat mengakses fitur sesuai dengan perannya.
 
 ---
 
-## 🚀 Live Demo
+🚀 Live Demo
 
-🌐 **Demo:**  
+🌐 *Demo:*  
 https://bankopss.vercel.app
 
-💻 **Repository:**  
+💻 *Repository:* 
 https://github.com/khalilurrahmanmahdi12/BankOpss
 
 ---
