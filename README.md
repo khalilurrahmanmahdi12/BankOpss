@@ -10,7 +10,7 @@ Project ini dibuat sebagai prototype sistem internal perbankan dengan konsep **R
 🚀 Live Demo
 
 🌐 *Demo:*  
-https://bankopss.vercel.app
+https://bank-opss.vercel.app/
 
 💻 *Repository:* 
 https://github.com/khalilurrahmanmahdi12/BankOpss
