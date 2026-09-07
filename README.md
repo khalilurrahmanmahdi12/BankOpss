@@ -1,18 +1,24 @@
-
 🏦 BankOps
 
-BankOps adalah aplikasi web untuk monitoring operasional perbankan dalam satu dashboard, mulai dari transaksi, nasabah, rekening, fraud alert, approval, laporan, hingga audit aktivitas pengguna.
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)
+![Zustand](https://img.shields.io/badge/Zustand-State_Management-111827)
+![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel&logoColor=white)
 
-Project ini dibuat sebagai prototype sistem internal perbankan dengan konsep **Role-Based Access Control**, sehingga setiap pengguna hanya dapat mengakses fitur sesuai dengan perannya.
+*BankOps* adalah aplikasi web untuk membantu monitoring operasional perbankan dalam satu dashboard terintegrasi, mulai dari transaksi, nasabah, rekening, fraud alert, approval, laporan, hingga audit aktivitas pengguna.
+
+Project ini dikembangkan sebagai **prototype sistem internal perbankan** dengan pendekatan **Role-Based Access Control**, sehingga setiap pengguna hanya dapat mengakses fitur sesuai dengan perannya.
 
 ---
 
 🚀 Live Demo
 
-🌐 *Demo:*  
+🌐 *Demo*
 https://bank-opss.vercel.app/
 
-💻 *Repository:* 
+💻 *Repository*  
 https://github.com/khalilurrahmanmahdi12/BankOpss
 
 ---
@@ -20,33 +26,40 @@ https://github.com/khalilurrahmanmahdi12/BankOpss
 ✨ Fitur Utama
 
 📊 Dashboard Monitoring
-Menampilkan ringkasan kondisi operasional seperti:
+
+Menampilkan ringkasan kondisi operasional perbankan seperti:
 
 - 💰 Volume transaksi
 - 🔄 Jumlah transaksi
 - 👥 Total nasabah
-- 🚨 Jumlah fraud alert
-- 📈 Grafik transaksi
+- 🚨 Fraud alert
+- 📈 Grafik aktivitas transaksi
 - 🧾 Transaksi terbaru
 - 🛡️ Fraud alert terbaru
 - ✅ Pending approval
 
+Dashboard dirancang untuk memberikan gambaran cepat mengenai kondisi operasional dan aktivitas penting yang membutuhkan perhatian.
+
 ---
 
 👥 Manajemen Nasabah
-Fitur untuk monitoring data nasabah, meliputi:
+
+Administrator dan pengguna yang memiliki akses dapat melakukan monitoring data nasabah melalui fitur:
 
 - 🔎 Pencarian nasabah
 - 🎯 Filter status
 - 👤 Detail nasabah
 - 🏦 Informasi rekening
-- 💵 Saldo
+- 💵 Informasi saldo
 - 📜 Riwayat transaksi
+
+Halaman detail membantu pengguna melihat informasi nasabah secara lebih terstruktur dalam satu tempat.
 
 ---
 
 🏦 Manajemen Rekening
-Menampilkan informasi rekening seperti:
+
+Modul rekening digunakan untuk memantau informasi rekening nasabah seperti:
 
 - 🔢 Nomor rekening
 - 👤 Nama pemilik
@@ -56,16 +69,19 @@ Menampilkan informasi rekening seperti:
 - 🔒 Blokir rekening
 - 🔓 Buka blokir rekening
 
-Status rekening:
+Status rekening yang tersedia:
 
 - 🟢 Aktif
 - 🔴 Diblokir
 - 🟡 Ditangguhkan
 
+Fitur blokir dan buka blokir pada project ini digunakan sebagai simulasi workflow operasional.
+
 ---
 
 💸 Monitoring Transaksi
-Menampilkan seluruh aktivitas transaksi dengan informasi:
+
+Menampilkan seluruh aktivitas transaksi dengan informasi lengkap seperti:
 
 - ID transaksi
 - Nama nasabah
@@ -77,7 +93,7 @@ Menampilkan seluruh aktivitas transaksi dengan informasi:
 - Nomor referensi
 - Status transaksi
 
-Jenis transaksi:
+Jenis transaksi meliputi:
 
 - ⬇️ Transfer Masuk
 - ⬆️ Transfer Keluar
@@ -90,14 +106,32 @@ Status transaksi:
 - 🔍 Ditinjau
 - ❌ Gagal
 
-Tersedia juga fitur pencarian dan filter transaksi.
+Tersedia juga fitur pencarian dan filter untuk membantu proses monitoring transaksi.
+
+---
+
+🔍 Detail Transaksi
+
+Setiap transaksi dapat dibuka secara lebih detail untuk melihat informasi seperti:
+
+- Identitas transaksi
+- Nasabah terkait
+- Nomor rekening
+- Nominal
+- Waktu transaksi
+- Channel
+- Referensi
+- Status transaksi
+
+Halaman ini membantu proses pemeriksaan terhadap transaksi tertentu.
 
 ---
 
 🛡️ Fraud Monitoring
-Modul khusus untuk memantau transaksi atau aktivitas yang terindikasi mencurigakan.
 
-Informasi yang tersedia:
+Modul Fraud Monitoring digunakan untuk memantau transaksi atau aktivitas yang terindikasi mencurigakan.
+
+Informasi fraud alert meliputi:
 
 - 🚨 ID fraud alert
 - 🔗 Transaksi terkait
@@ -112,10 +146,13 @@ Tindakan yang tersedia:
 - ✅ Tandai Aman
 - 🚨 Konfirmasi Fraud
 
+Modul ini dirancang untuk mensimulasikan workflow pemeriksaan transaksi berisiko.
+
 ---
 
 ✅ Approval / Persetujuan
-Digunakan untuk menangani transaksi atau aktivitas yang membutuhkan persetujuan.
+
+Digunakan untuk menangani transaksi atau aktivitas tertentu yang membutuhkan persetujuan.
 
 Status approval:
 
@@ -123,110 +160,146 @@ Status approval:
 - ✅ Disetujui
 - ❌ Ditolak
 
-Pengguna yang berwenang dapat memberikan keputusan beserta alasan persetujuan atau penolakan.
+Pengguna yang memiliki kewenangan dapat:
+
+- Melihat detail pengajuan
+- Memberikan keputusan
+- Menambahkan alasan persetujuan
+- Menambahkan alasan penolakan
+- Mencatat pengguna yang memberikan keputusan
 
 ---
 
 📑 Laporan Operasional
-Modul laporan menyediakan:
+
+Modul laporan menyediakan informasi operasional dalam bentuk ringkasan dan tabel.
+
+Fitur laporan meliputi:
 
 - 📊 Ringkasan transaksi
 - 💰 Total nilai transaksi
 - 🔢 Jumlah transaksi
 - 📌 Komposisi status transaksi
 - 📅 Filter periode
-- 🔎 Pencarian
+- 🔎 Pencarian data
 - 📋 Tabel laporan
 - 📥 Export Excel
 
 ---
 
 📗 Export Excel
-Laporan dapat diekspor ke format `.xlsx` untuk kebutuhan:
 
-- 📊 Rekapitulasi
-- 🗂️ Dokumentasi
-- 📈 Analisis data
-- 🧾 Pelaporan
-- 📁 Arsip operasional
+Data laporan dapat diekspor ke format:
+
+```text
+.xlsx
+````
+
+Export dapat digunakan untuk kebutuhan:
+
+* 📊 Rekapitulasi
+* 🗂️ Dokumentasi
+* 📈 Analisis data
+* 🧾 Pelaporan
+* 📁 Arsip operasional
 
 ---
 
 📝 Audit Log
-Mencatat aktivitas pengguna di dalam sistem, seperti:
 
-- 🔄 Perubahan status
-- 🔒 Pemblokiran rekening
-- ✅ Approval
-- ❌ Penolakan
-- 🛡️ Aktivitas fraud
-- 👤 Aktivitas pengguna lainnya
+Audit Log digunakan untuk mencatat aktivitas penting pengguna di dalam sistem.
 
-Audit log membantu proses monitoring, transparansi, dan pemeriksaan aktivitas internal.
+Aktivitas yang dapat dicatat meliputi:
+
+* 🔄 Perubahan status
+* 🔒 Pemblokiran rekening
+* 🔓 Pembukaan blokir rekening
+* ✅ Approval
+* ❌ Penolakan
+* 🛡️ Aktivitas fraud
+* 👤 Aktivitas pengguna lainnya
+
+Audit Log membantu proses monitoring, transparansi, serta pemeriksaan aktivitas internal.
 
 ---
 
 🔔 Sistem Notifikasi
-BankOps memiliki sistem notifikasi untuk aktivitas penting seperti:
 
-- 🚨 Fraud alert baru
-- 🔍 Transaksi perlu ditinjau
-- ⏳ Pending approval
-- 🏦 Perubahan status rekening
-- ℹ️ Informasi sistem
+BankOps memiliki panel notifikasi untuk menampilkan aktivitas penting seperti:
 
-Fitur notifikasi:
+* 🚨 Fraud alert baru
+* 🔍 Transaksi perlu ditinjau
+* ⏳ Pending approval
+* 🏦 Perubahan status rekening
+* ℹ️ Informasi sistem
 
-- 🔴 Badge jumlah notifikasi
-- ✅ Tandai sebagai dibaca
-- ✅ Tandai semua sebagai dibaca
-- 🔗 Navigasi langsung ke halaman terkait
+Fitur notifikasi meliputi:
+
+* 🔴 Badge jumlah notifikasi
+* ✅ Tandai sebagai dibaca
+* ✅ Tandai semua sebagai dibaca
+* 🔗 Navigasi langsung ke halaman terkait
 
 ---
 
 👤 Informasi Akun
-Pengguna dapat melihat:
 
-- Nama
-- Email
-- Role
-- Status akun
-- Hak akses
+Pengguna dapat melihat informasi akun seperti:
+
+* Nama
+* Email
+* Role
+* Status akun
+* Hak akses
 
 ---
 
 🔐 Role-Based Access Control
 
-BankOps memiliki 3 role utama:
+BankOps memiliki tiga role utama:
 
 👑 Administrator
-Akses penuh ke:
 
-- Dashboard
-- Nasabah
-- Rekening
-- Transaksi
-- Fraud Alert
-- Persetujuan
-- Laporan
-- Audit Log
+Administrator memiliki akses penuh ke:
+
+* Dashboard
+* Nasabah
+* Rekening
+* Transaksi
+* Fraud Alert
+* Persetujuan
+* Laporan
+* Audit Log
+* Profil
+* Pengaturan
+
+---
 
 🧑‍💼 Supervisor
-Akses ke:
 
-- Dashboard
-- Nasabah
-- Rekening
-- Transaksi
-- Persetujuan
-- Laporan
+Supervisor memiliki akses ke:
+
+* Dashboard
+* Nasabah
+* Rekening
+* Transaksi
+* Persetujuan
+* Laporan
+* Profil
+* Pengaturan
+
+---
 
 🕵️ Fraud Analyst
-Akses ke:
 
-- Dashboard
-- Transaksi
-- Fraud Alert
+Fraud Analyst memiliki akses yang berfokus pada:
+
+* Dashboard
+* Transaksi
+* Fraud Alert
+* Pemeriksaan transaksi mencurigakan
+* Profil
+* Pengaturan
 
 ---
 
@@ -234,65 +307,71 @@ Akses ke:
 
 BankOps dilengkapi dengan:
 
-- 🔐 Login
-- 🛡️ Protected Route
-- 👥 Role-Based Access Control
-- 🚫 Halaman 403 Akses Ditolak
-- 🔍 Halaman 404 Tidak Ditemukan
-- 🚪 Logout
-- 💾 Session berbasis localStorage untuk simulasi
+* 🔐 Sistem login
+* 🛡️ Protected Route
+* 👥 Role-Based Access Control
+* 🚫 Halaman 403 Akses Ditolak
+* 🔍 Halaman 404 Tidak Ditemukan
+* 🚪 Logout
+* 💾 Session berbasis LocalStorage untuk simulasi
+
+Setiap pengguna akan diarahkan ke halaman yang sesuai dengan hak aksesnya.
 
 ---
 
 📱 Responsive Design
 
-BankOps dirancang agar nyaman digunakan pada:
+BankOps dirancang agar dapat digunakan dengan nyaman pada berbagai ukuran perangkat:
 
-- 🖥️ Desktop
-- 💻 Laptop
-- 📱 Tablet
-- 📲 Smartphone
+* 🖥️ Desktop
+* 💻 Laptop
+* 📱 Tablet
+* 📲 Smartphone
 
-Fitur responsive:
+Fitur responsive meliputi:
 
-- ☰ Mobile Sidebar
-- 📋 Responsive Table
-- 🔔 Responsive Notification Panel
-- 👤 Responsive Profile Dropdown
-- 📊 Responsive Dashboard Cards
-
----
-
-⏳ Loading State
-
-Sistem dilengkapi dengan **Skeleton Loading** untuk memberikan feedback visual ketika halaman sedang dimuat.
-
-Hal ini membuat pengalaman pengguna terasa lebih halus dan modern.
+* ☰ Mobile Sidebar
+* 📋 Responsive Table
+* 🔔 Responsive Notification Panel
+* 👤 Responsive Profile Dropdown
+* 📊 Responsive Dashboard Cards
+* 🔎 Responsive Filter
+* 📱 Mobile-friendly Navigation
 
 ---
 
-🛠️ Teknologi yang Digunakan
+⏳ Loading & Skeleton
 
-- ⚛️ React
-- 🔷 TypeScript
-- ⚡ Vite
-- 🎨 Tailwind CSS
-- 🧭 React Router
-- 🐻 Zustand
-- 📊 Recharts
-- 🎯 Lucide React
-- 🐙 GitHub
-- ▲ Vercel
+Sistem menggunakan **Skeleton Loading** untuk memberikan feedback visual saat halaman sedang dimuat.
+
+Fitur ini membantu membuat pengalaman pengguna terasa lebih halus dan modern.
+
+---
+
+💾 LocalStorage
+
+Project menggunakan `localStorage` untuk menyimpan data simulasi seperti:
+
+* Session login
+* Status akun
+* Beberapa perubahan data
+* Status transaksi
+* Fraud alert
+* Approval
+* Preferensi pengguna
+
+Dengan demikian, sebagian data demo dapat tetap tersedia setelah halaman direfresh.
 
 ---
 
 🧪 Demo Account
 
 👑 Administrator
+
 ```text
 Email    : admin@bankops.id
 Password : admin123
-````
+```
 
 🧑‍💼 Supervisor
 
@@ -310,13 +389,122 @@ Password : fraud123
 
 ---
 
-📌 Catatan
+🛠️ Teknologi yang Digunakan
 
-BankOps saat ini merupakan **prototype / demo portfolio**.
+* ⚛️ React
+* 🔷 TypeScript
+* ⚡ Vite
+* 🎨 Tailwind CSS
+* 🧭 React Router
+* 🐻 Zustand
+* 📊 Recharts
+* 🎯 Lucide React
+* 📗 SheetJS / XLSX
+* 💾 LocalStorage
+* 🐙 GitHub
+* ▲ Vercel
 
-Data yang digunakan merupakan **data simulasi**, bukan data nasabah atau transaksi perbankan asli.
+---
 
-Fitur seperti autentikasi, fraud detection, approval, rekening, dan transaksi masih menggunakan simulasi frontend.
+🚀 Menjalankan Project
+
+Clone repository:
+
+```bash
+git clone https://github.com/khalilurrahmanmahdi12/BankOpss.git
+```
+
+Masuk ke folder project:
+
+```bash
+cd BankOpss
+```
+
+Install dependency:
+
+```bash
+npm install
+```
+
+Jalankan development server:
+
+```bash
+npm run dev
+```
+
+Build production:
+
+```bash
+npm run build
+```
+
+---
+
+🌐 Deployment
+
+Project dideploy menggunakan *Vercel*.
+
+Live application:
+
+```text
+https://bank-opss.vercel.app/
+```
+
+Setiap update yang dipush ke branch utama GitHub dapat digunakan untuk melakukan deployment ulang secara otomatis melalui Vercel.
+
+---
+
+📂 Struktur Utama Project
+
+```text
+src/
+├── components/
+│   ├── auth/
+│   ├── dashboard/
+│   ├── navigation/
+│   ├── transactions/
+│   └── ui/
+│
+├── data/
+│
+├── layouts/
+│
+├── pages/
+│   ├── admin/
+│   ├── supervisor/
+│   └── fraud/
+│
+├── store/
+├── types/
+├── utils/
+├── App.tsx
+├── index.css
+└── main.tsx
+```
+
+---
+
+📌 Status Project
+
+✅ Dashboard Monitoring
+✅ Manajemen Nasabah
+✅ Manajemen Rekening
+✅ Monitoring Transaksi
+✅ Detail Transaksi
+✅ Fraud Monitoring
+✅ Approval Workflow
+✅ Laporan Operasional
+✅ Export Excel
+✅ Audit Log
+✅ Sistem Notifikasi
+✅ Role-Based Access Control
+✅ Protected Route
+✅ Halaman 403
+✅ Halaman 404
+✅ Responsive Design
+✅ Skeleton Loading
+✅ LocalStorage
+✅ Deployment Vercel
 
 ---
 
@@ -324,11 +512,11 @@ Fitur seperti autentikasi, fraud detection, approval, rekening, dan transaksi ma
 
 BankOps masih dapat dikembangkan dengan:
 
-* 🗄️ Backend API
-* 💾 Database
+* 🗄️ Backend REST API
+* 🐬 MySQL / PostgreSQL
 * 🔐 Server-side Authentication
 * 📲 OTP / Multi-Factor Authentication
-* 👥 Manajemen User
+* 👥 Manajemen pengguna
 * ⚡ Real-time Transaction Monitoring
 * 🏦 Integrasi Core Banking
 * 🤖 Fraud Detection Engine
@@ -336,42 +524,56 @@ BankOps masih dapat dikembangkan dengan:
 * 💬 WhatsApp Notification
 * 📄 Export PDF
 * 📊 Advanced Analytics Dashboard
-* 🔒 Enkripsi dan keamanan tingkat produksi
+* 🔐 Encryption & Security Hardening
+* 📝 Centralized Audit Logging
+* 🔔 Real-Time Notification
 
 ---
 
-## 🎯 Tujuan Project
+🎯 Tujuan Project
 
 Project ini dibuat untuk menunjukkan kemampuan dalam membangun aplikasi dashboard bisnis dengan:
 
-* UI/UX modern
-* Responsive design
-* State management
-* Routing
+* Modern UI/UX
+* Responsive Web Design
+* State Management
+* Client-side Routing
 * Role-Based Access Control
-* Data visualization
-* Fraud monitoring workflow
-* Approval workflow
+* Data Visualization
+* Fraud Monitoring Workflow
+* Approval Workflow
 * Reporting
-* Audit logging
-* Deployment production
+* Export Data
+* Audit Logging
+* Deployment Production
 
 ---
 
-## 👨‍💻 Developer
+⚠️ Catatan
 
-**Khalilurrahman Mahdi**
+*BankOps merupakan prototype/demo portfolio.*
+
+Seluruh data yang digunakan merupakan **data simulasi**, bukan data nasabah, rekening, maupun transaksi perbankan asli.
+
+Fitur autentikasi, fraud detection, approval, rekening, dan transaksi pada versi saat ini masih menggunakan simulasi frontend dan belum terhubung ke sistem perbankan production.
+
+---
+
+👨‍💻 Developer
+
+*Khalilurrahman Mahdi*
 
 Software Engineer / Full-Stack Developer
 
-🔗 GitHub:
+🔗 GitHub
 [https://github.com/khalilurrahmanmahdi12](https://github.com/khalilurrahmanmahdi12)
 
 ---
 
-⭐ Jika project ini menarik, silakan berikan star pada repository.
+⭐ Repository
 
-```
+Jika project ini menarik, jangan lupa kasih ⭐ pada repository.
 
-Saran kecil: bagian **Live Demo** sebaiknya kamu ganti dengan URL Vercel yang benar-benar aktif kalau nama domain deployment-mu ternyata bukan persis `bankopss.vercel.app`. README keren tapi link 404 itu seperti CV bagus dengan nomor telepon salah.
-```
+🔗 *BankOps*
+[https://github.com/khalilurrahmanmahdi12/BankOpss](https://github.com/khalilurrahmanmahdi12/BankOpss)
+
